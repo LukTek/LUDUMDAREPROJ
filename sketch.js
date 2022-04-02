@@ -99,7 +99,7 @@ function draw() {
 
 
   
-    image(img, end[0], end[1], squareSize, squareSize);
+    image(img, end[0]*squareSize, end[1]*squareSize, squareSize, squareSize);
 
     fill(0, 0, 255)
 
