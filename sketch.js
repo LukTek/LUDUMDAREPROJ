@@ -97,8 +97,9 @@ function draw() {
 
     square(pos[0]*squareSize, pos[1]*squareSize, squareSize)
 
-    fill(0, 255, 0)
-    square(end[0]*squareSize, end[1]*squareSize, squareSize)
+
+  
+    image(img, end[0], end[1], squareSize, squareSize);
 
     fill(0, 0, 255)
 
