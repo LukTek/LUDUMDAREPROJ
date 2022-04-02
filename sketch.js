@@ -12,12 +12,23 @@ var img;
 let data = Array(10).fill().map(()=>Array(10).fill(0))
 
 
-for(j = 2; j <8; j++){
-for(i=2; i <8; i++){
+for(j = 2; j <6; j++){
+for(i=1; i <8; i++){
   data[i][j] = 1
 }
-
 }
+
+
+data[2][6] = 1
+
+data[2][7] = 1
+
+data[3][6] = 1
+
+data[3][7] = 1
+
+
+
 
 let blocks = [[]]
 
@@ -29,11 +40,13 @@ let lastMove = 'none'
 
 
 
-blocks.push([4, 7])
+blocks.push([3, 5])
 blocks.push([3, 3])
-blocks.push([6, 6])
-blocks.push([3, 4])
+
+
 blocks.push([7, 4])
+blocks.push([5, 4])
+
 
 console.log(blocks[1])
 
@@ -155,8 +168,3 @@ function nextBlock(){
 
   console.log(avaMoves)
 }
-
-
-
-
-
