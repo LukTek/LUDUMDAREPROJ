@@ -5,14 +5,7 @@ function setup() {
 
 }
 
-let img;
-
-function preload() {
-  // preload() runs once
-  img = loadImage('images/me.jpg');
-}
-
-
+var img;
 
 
 
@@ -97,9 +90,8 @@ function draw() {
 
     square(pos[0]*squareSize, pos[1]*squareSize, squareSize)
 
-
-  
-    image(img, end[0]*squareSize, end[1]*squareSize, squareSize, squareSize);
+    fill(0, 255, 0)
+    square(end[0]*squareSize, end[1]*squareSize, squareSize)
 
     fill(0, 0, 255)
 
@@ -168,6 +160,3 @@ function nextBlock(){
 
 
 
-function windowResized() {
-  resizeCanvas(10, 10);
-}
