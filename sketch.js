@@ -5,7 +5,14 @@ function setup() {
 
 }
 
-var img;
+let img;
+
+function preload() {
+  // preload() runs once
+  img = loadImage('images/me.jpg');
+}
+
+
 
 
 
